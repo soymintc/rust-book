@@ -15,6 +15,7 @@ fn main() {
     let mut count = 0;
     loop {
         count += 1;
+        println!("count: {count}, nth: {nth}");
         if count > n { 
             break; 
         }
@@ -25,7 +26,6 @@ fn main() {
             a1 = a2;
             a2 = nth;
         }
-        println!("count: {count}, nth: {nth}");
     }
     println!("The {n}-th Fibonacci number is: {nth}");
 
